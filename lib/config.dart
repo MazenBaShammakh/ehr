@@ -1,3 +1,5 @@
 const Map<String, String> contractAddresses = {
   "Flutter": "0xd3954D533CE8090D7f33736aC8a6Ff2BB65b2197",
+  "EHR": "0x9CfA7Ed60741e098A95B01003860e6A63b6fBB3c",
+  "EHRganache": "0x9462FD34CbE8012073bF22EdF8989a806A42C322",
 };

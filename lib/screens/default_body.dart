@@ -19,20 +19,34 @@ class DefaultBody extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       padding: EdgeInsets.symmetric(
-        horizontal: size.width * .25,
+        // horizontal: size.width * .25,
+        horizontal: size.width * .20,
         vertical: kSpacingUnit * 15,
       ),
       decoration: const BoxDecoration(
-        color: Color(0xFFFEFBE9),
+        // color: Color(0xFFFEFBE9),
+        gradient: LinearGradient(
+          colors: [
+            // #
+            // Color.fromARGB(255, 255, 224, 183),
+            // Color.fromARGB(255, 255, 203, 134),
+            Color(0xFFFFFFFF),
+            Color(0xFFFFEFBA),
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          PageTitle(title),
-          sizedBoxV(10),
-          content,
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            PageTitle(title),
+            sizedBoxV(10),
+            content,
+          ],
+        ),
       ),
     );
   }

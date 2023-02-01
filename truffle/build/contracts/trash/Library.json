@@ -1,0 +1,569 @@
+{
+  "contractName": "Library",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/1_Library.sol\":\"Library\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":100},\"remappings\":[]},\"sources\":{\"project:/contracts/1_Library.sol\":{\"keccak256\":\"0x7c4bae5a9ccbfcc6d4f13b59790fe77e1cdcb5c06d5385e3f66069ca12a8d893\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c09e339667ae6f7a359b9d5eff18d9128237b43c3919c49b5d8286b5956a5a79\",\"dweb:/ipfs/QmcJWC8h6WnoVsLLjnYrWWZ6vcS2XYDt1wuss9WaBufJZn\"]}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a763aaecbd3d1293119228c233299d54616dbd6a1ef63584c9dd96b7436f941264736f6c63430008090033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220a763aaecbd3d1293119228c233299d54616dbd6a1ef63584c9dd96b7436f941264736f6c63430008090033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "60:336:0:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;60:336:0;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "60:336:0:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nlibrary Library {\r\n    // ENUMS\r\n    enum BloodType { A, B, AB, O }\r\n    enum Sex { Male, Female }\r\n    enum User { Patient, Doctor, Hospital }\r\n    enum DoctorStatus { Unknown, Approved, Pending, Removed }\r\n\r\n    // STRUCTS\r\n    struct Prescription {\r\n        string medicine;\r\n        uint numDays;\r\n        uint perDay;\r\n    }\r\n\r\n\r\n}\r\n",
+  "sourcePath": "D:\\Blockchain\\dapp_ehr_1\\truffle\\contracts\\1_Library.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/1_Library.sol",
+    "exportedSymbols": {
+      "Library": [
+        26
+      ]
+    },
+    "id": 27,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Library",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 26,
+        "linearizedBaseContracts": [
+          26
+        ],
+        "name": "Library",
+        "nameLocation": "68:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Library.BloodType",
+            "id": 6,
+            "members": [
+              {
+                "id": 2,
+                "name": "A",
+                "nameLocation": "114:1:0",
+                "nodeType": "EnumValue",
+                "src": "114:1:0"
+              },
+              {
+                "id": 3,
+                "name": "B",
+                "nameLocation": "117:1:0",
+                "nodeType": "EnumValue",
+                "src": "117:1:0"
+              },
+              {
+                "id": 4,
+                "name": "AB",
+                "nameLocation": "120:2:0",
+                "nodeType": "EnumValue",
+                "src": "120:2:0"
+              },
+              {
+                "id": 5,
+                "name": "O",
+                "nameLocation": "124:1:0",
+                "nodeType": "EnumValue",
+                "src": "124:1:0"
+              }
+            ],
+            "name": "BloodType",
+            "nameLocation": "102:9:0",
+            "nodeType": "EnumDefinition",
+            "src": "97:30:0"
+          },
+          {
+            "canonicalName": "Library.Sex",
+            "id": 9,
+            "members": [
+              {
+                "id": 7,
+                "name": "Male",
+                "nameLocation": "144:4:0",
+                "nodeType": "EnumValue",
+                "src": "144:4:0"
+              },
+              {
+                "id": 8,
+                "name": "Female",
+                "nameLocation": "150:6:0",
+                "nodeType": "EnumValue",
+                "src": "150:6:0"
+              }
+            ],
+            "name": "Sex",
+            "nameLocation": "138:3:0",
+            "nodeType": "EnumDefinition",
+            "src": "133:25:0"
+          },
+          {
+            "canonicalName": "Library.User",
+            "id": 13,
+            "members": [
+              {
+                "id": 10,
+                "name": "Patient",
+                "nameLocation": "176:7:0",
+                "nodeType": "EnumValue",
+                "src": "176:7:0"
+              },
+              {
+                "id": 11,
+                "name": "Doctor",
+                "nameLocation": "185:6:0",
+                "nodeType": "EnumValue",
+                "src": "185:6:0"
+              },
+              {
+                "id": 12,
+                "name": "Hospital",
+                "nameLocation": "193:8:0",
+                "nodeType": "EnumValue",
+                "src": "193:8:0"
+              }
+            ],
+            "name": "User",
+            "nameLocation": "169:4:0",
+            "nodeType": "EnumDefinition",
+            "src": "164:39:0"
+          },
+          {
+            "canonicalName": "Library.DoctorStatus",
+            "id": 18,
+            "members": [
+              {
+                "id": 14,
+                "name": "Unknown",
+                "nameLocation": "229:7:0",
+                "nodeType": "EnumValue",
+                "src": "229:7:0"
+              },
+              {
+                "id": 15,
+                "name": "Approved",
+                "nameLocation": "238:8:0",
+                "nodeType": "EnumValue",
+                "src": "238:8:0"
+              },
+              {
+                "id": 16,
+                "name": "Pending",
+                "nameLocation": "248:7:0",
+                "nodeType": "EnumValue",
+                "src": "248:7:0"
+              },
+              {
+                "id": 17,
+                "name": "Removed",
+                "nameLocation": "257:7:0",
+                "nodeType": "EnumValue",
+                "src": "257:7:0"
+              }
+            ],
+            "name": "DoctorStatus",
+            "nameLocation": "214:12:0",
+            "nodeType": "EnumDefinition",
+            "src": "209:57:0"
+          },
+          {
+            "canonicalName": "Library.Prescription",
+            "id": 25,
+            "members": [
+              {
+                "constant": false,
+                "id": 20,
+                "mutability": "mutable",
+                "name": "medicine",
+                "nameLocation": "328:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "321:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 19,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "321:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22,
+                "mutability": "mutable",
+                "name": "numDays",
+                "nameLocation": "352:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "347:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 21,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "347:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 24,
+                "mutability": "mutable",
+                "name": "perDay",
+                "nameLocation": "375:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "370:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 23,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "370:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Prescription",
+            "nameLocation": "297:12:0",
+            "nodeType": "StructDefinition",
+            "scope": 26,
+            "src": "290:99:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 27,
+        "src": "60:336:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:365:0"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/1_Library.sol",
+    "exportedSymbols": {
+      "Library": [
+        26
+      ]
+    },
+    "id": 27,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Library",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 26,
+        "linearizedBaseContracts": [
+          26
+        ],
+        "name": "Library",
+        "nameLocation": "68:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Library.BloodType",
+            "id": 6,
+            "members": [
+              {
+                "id": 2,
+                "name": "A",
+                "nameLocation": "114:1:0",
+                "nodeType": "EnumValue",
+                "src": "114:1:0"
+              },
+              {
+                "id": 3,
+                "name": "B",
+                "nameLocation": "117:1:0",
+                "nodeType": "EnumValue",
+                "src": "117:1:0"
+              },
+              {
+                "id": 4,
+                "name": "AB",
+                "nameLocation": "120:2:0",
+                "nodeType": "EnumValue",
+                "src": "120:2:0"
+              },
+              {
+                "id": 5,
+                "name": "O",
+                "nameLocation": "124:1:0",
+                "nodeType": "EnumValue",
+                "src": "124:1:0"
+              }
+            ],
+            "name": "BloodType",
+            "nameLocation": "102:9:0",
+            "nodeType": "EnumDefinition",
+            "src": "97:30:0"
+          },
+          {
+            "canonicalName": "Library.Sex",
+            "id": 9,
+            "members": [
+              {
+                "id": 7,
+                "name": "Male",
+                "nameLocation": "144:4:0",
+                "nodeType": "EnumValue",
+                "src": "144:4:0"
+              },
+              {
+                "id": 8,
+                "name": "Female",
+                "nameLocation": "150:6:0",
+                "nodeType": "EnumValue",
+                "src": "150:6:0"
+              }
+            ],
+            "name": "Sex",
+            "nameLocation": "138:3:0",
+            "nodeType": "EnumDefinition",
+            "src": "133:25:0"
+          },
+          {
+            "canonicalName": "Library.User",
+            "id": 13,
+            "members": [
+              {
+                "id": 10,
+                "name": "Patient",
+                "nameLocation": "176:7:0",
+                "nodeType": "EnumValue",
+                "src": "176:7:0"
+              },
+              {
+                "id": 11,
+                "name": "Doctor",
+                "nameLocation": "185:6:0",
+                "nodeType": "EnumValue",
+                "src": "185:6:0"
+              },
+              {
+                "id": 12,
+                "name": "Hospital",
+                "nameLocation": "193:8:0",
+                "nodeType": "EnumValue",
+                "src": "193:8:0"
+              }
+            ],
+            "name": "User",
+            "nameLocation": "169:4:0",
+            "nodeType": "EnumDefinition",
+            "src": "164:39:0"
+          },
+          {
+            "canonicalName": "Library.DoctorStatus",
+            "id": 18,
+            "members": [
+              {
+                "id": 14,
+                "name": "Unknown",
+                "nameLocation": "229:7:0",
+                "nodeType": "EnumValue",
+                "src": "229:7:0"
+              },
+              {
+                "id": 15,
+                "name": "Approved",
+                "nameLocation": "238:8:0",
+                "nodeType": "EnumValue",
+                "src": "238:8:0"
+              },
+              {
+                "id": 16,
+                "name": "Pending",
+                "nameLocation": "248:7:0",
+                "nodeType": "EnumValue",
+                "src": "248:7:0"
+              },
+              {
+                "id": 17,
+                "name": "Removed",
+                "nameLocation": "257:7:0",
+                "nodeType": "EnumValue",
+                "src": "257:7:0"
+              }
+            ],
+            "name": "DoctorStatus",
+            "nameLocation": "214:12:0",
+            "nodeType": "EnumDefinition",
+            "src": "209:57:0"
+          },
+          {
+            "canonicalName": "Library.Prescription",
+            "id": 25,
+            "members": [
+              {
+                "constant": false,
+                "id": 20,
+                "mutability": "mutable",
+                "name": "medicine",
+                "nameLocation": "328:8:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "321:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 19,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "321:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22,
+                "mutability": "mutable",
+                "name": "numDays",
+                "nameLocation": "352:7:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "347:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 21,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "347:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 24,
+                "mutability": "mutable",
+                "name": "perDay",
+                "nameLocation": "375:6:0",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "370:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 23,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "370:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Prescription",
+            "nameLocation": "297:12:0",
+            "nodeType": "StructDefinition",
+            "scope": 26,
+            "src": "290:99:0",
+            "visibility": "public"
+          }
+        ],
+        "scope": 27,
+        "src": "60:336:0",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:365:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2023-01-31T02:46:14.024Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

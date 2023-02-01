@@ -11,21 +11,19 @@ Column defaultOptionCardChild({required IconData icon, required String text}) =>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(
-          // width: double.infinity,
-          // color: Colors.red,
-          child: Icon(
-            icon,
-            // color: Colors.green,
-            size: kSpacingUnit * 10,
-          ),
+        Icon(
+          icon,
+          size: kSpacingUnit * 10,
         ),
         sizedBoxV(2),
-        Text(
-          text,
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
+        Flexible(
+          child: Text(
+            text,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ],
@@ -37,3 +35,18 @@ Container constraint40(Widget child) => Container(
     );
 
 enum Sex { male, female }
+
+Color kColor = const Color(0xFF008624);
+Map<int, Color> _materialColor = {
+  50: kColor,
+  100: kColor,
+  200: kColor,
+  300: kColor,
+  400: kColor,
+  500: kColor,
+  600: kColor,
+  700: kColor,
+  800: kColor,
+  900: kColor,
+};
+MaterialColor kMaterialColor = MaterialColor(kColor.value, _materialColor);

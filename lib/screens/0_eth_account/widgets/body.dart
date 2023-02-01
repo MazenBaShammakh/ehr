@@ -17,7 +17,6 @@ class _BodyState extends State<Body> {
 
   @override
   void initState() {
-    // TODO: implement initState
     pkController = TextEditingController();
     super.initState();
   }
@@ -38,7 +37,7 @@ class _BodyState extends State<Body> {
               obscureText: true,
             ),
           ),
-          sizedBoxV(3),
+          sizedBoxV(4),
           ElevatedButton(
             onPressed: () {
               if (pkController.text.length != 64) {
